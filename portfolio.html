@@ -1,155 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-</head>
-<body>
-    <div class="unbreakable-container">  
-        <div class="unbreakable">
-         
+  </head>
+  <body>
+    <div class="unbreakable-container">
+      <div class="unbreakable">
+        <span class="un">Talk is </span><span class="break">Cheap </span
+        ><span class="able">Show</span>
+      </div>
+      <div class="ks">Me Your Code</div>
+    </div>
+  </body>
+  <style>
+        @import url(https://fonts.googleapis.com/css?family=Anton);
 
-             <span class="un">Bhedo </span><span class="break">Power</span><span class="able">24</span>
-            </div>
-            <div class="ks">hour</div>
-        </div>
+    body
+    {
+        background: #000;
+    }
+    .unbreakable-container
+    {
+        position: absolute;
+        bottom: 10px;
+        left: 20px;
+    }
 
-</body>
-<style>
-    @import url(https://fonts.googleapis.com/css?family=Anton);
+    .unbreakable
+    {
+        font-family: 'Anton', sans-serif;
+        line-height: 1;
 
-body
-{
-    background: #000;
-}
-.unbreakable-container
-{
-    position: absolute;
-    bottom: 10px;
-    left: 20px;
-}
+        letter-spacing: -.07em;
 
-.unbreakable
-{
-    font-family: 'Anton', sans-serif;
-    line-height: 1;
+        color: #fff;
+    }
 
-    letter-spacing: -.07em;
+    .ks
+    {
+        font-family: 'Anton', sans-serif;
+        font-size: 45px;
+        line-height: 1;
 
-    color: #fff;
-}
+        margin-top: -11px;
 
-.ks
-{
-    font-family: 'Anton', sans-serif;
-    font-size: 45px;
-    line-height: 1;
+        -webkit-transition: all .3s ease-in-out;
+                transition: all .3s cubic-bezier(.190, 1.000, .220, 1.000) 3s;
+        -webkit-transform: translateX(-1000%);
+            -ms-transform: translateX(-1000%);
+                transform: translateX(-1000%);
+        letter-spacing: -1px;
+        text-transform: uppercase;
 
-    margin-top: -11px;
+        color: #fc0;
+    }
 
-    -webkit-transition: all .3s ease-in-out;
-            transition: all .3s cubic-bezier(.190, 1.000, .220, 1.000) 3s;
-    -webkit-transform: translateX(-1000%);
-        -ms-transform: translateX(-1000%);
-            transform: translateX(-1000%);
-    letter-spacing: -1px;
-    text-transform: uppercase;
+    .animate .ks
+    {
+        -webkit-transform: translateX(0);
+            -ms-transform: translateX(0);
+                transform: translateX(0);
+    }
 
-    color: #fc0;
-}
+    span
+    {
+        font-family: 'Anton', Helvetica, sans-serif;
+        font-size: 40px;
 
-.animate .ks
-{
-    -webkit-transform: translateX(0);
-        -ms-transform: translateX(0);
-            transform: translateX(0);
-}
+        text-transform: uppercase;
 
-span
-{
-    font-family: 'Anton', Helvetica, sans-serif;
-    font-size: 40px;
+        opacity: 0;
+        color: #fff;
 
-    text-transform: uppercase;
+        filter: alpha(opacity=0);
+    }
 
-    opacity: 0;
-    color: #fff;
+    .able
+    {
+        -webkit-transition: all .3s cubic-bezier(.190, 1.000, .220, 1.000) 2.3s;
+                transition: all .3s cubic-bezier(.190, 1.000, .220, 1.000) 2.3s;
+        letter-spacing: -.07em;
+    }
 
-    filter: alpha(opacity=0);
-}
+    .break
+    {
+        -webkit-transition: all .3s ease-in-out 2s;
+                transition: all .3s ease-in-out 2s;
+        letter-spacing: -.07em;
+    }
 
-.able
-{
-    -webkit-transition: all .3s cubic-bezier(.190, 1.000, .220, 1.000) 2.3s;
-            transition: all .3s cubic-bezier(.190, 1.000, .220, 1.000) 2.3s;
-    letter-spacing: -.07em;
-}
+    .un
+    {
+        -webkit-transition: all .3s ease-in-out 1.7s;
+                transition: all .3s ease-in-out 1.7s;
+        letter-spacing: -.07em;
+    }
 
-.break
-{
-    -webkit-transition: all .3s ease-in-out 2s;
-            transition: all .3s ease-in-out 2s;
-    letter-spacing: -.07em;
-}
+    .animate .un
+    {
+        font-size: 40px;
 
-.un
-{
-    -webkit-transition: all .3s ease-in-out 1.7s;
-            transition: all .3s ease-in-out 1.7s;
-    letter-spacing: -.07em;
-}
+        -webkit-transform: scale(1.5,1.5);
+            -ms-transform: scale(1.5,1.5);
+                transform: scale(1.5,1.5);
 
-.animate .un
-{
-    font-size: 40px;
+        opacity: 1;
 
-    -webkit-transform: scale(1.5,1.5);
-        -ms-transform: scale(1.5,1.5);
-            transform: scale(1.5,1.5);
+        filter: alpha(opacity=100);
+    }
 
-    opacity: 1;
+    .animate .break
+    {
+        font-size: 60px;
 
-    filter: alpha(opacity=100);
-}
+        -webkit-transform: scale(1.5,1.5);
+            -ms-transform: scale(1.5,1.5);
+                transform: scale(1.5,1.5);
 
-.animate .break
-{
-    font-size: 60px;
+        opacity: 1;
 
-    -webkit-transform: scale(1.5,1.5);
-        -ms-transform: scale(1.5,1.5);
-            transform: scale(1.5,1.5);
+        filter: alpha(opacity=100);
+    }
 
-    opacity: 1;
+    .animate .able
+    {
+        font-size: 80px;
 
-    filter: alpha(opacity=100);
-}
+        -webkit-transform: scale(1.5,1.5);
+            -ms-transform: scale(1.5,1.5);
+                transform: scale(1.5,1.5);
 
-.animate .able
-{
-    font-size: 80px;
+        opacity: 1;
 
-    -webkit-transform: scale(1.5,1.5);
-        -ms-transform: scale(1.5,1.5);
-            transform: scale(1.5,1.5);
+        filter: alpha(opacity=100);
+    }
+  </style>
+  <script>
+        var hotbod = document.querySelector("body");
 
-    opacity: 1;
+    function doStuff() {
+        hotbod.className += " animate";
+    }
 
-    filter: alpha(opacity=100);
-}
-</style>
-<script>
-    var hotbod = document.querySelector("body");
-
-function doStuff() {
-    hotbod.className += " animate";
-}
-
-window.onload = function() {
-    doStuff();
-};
-
-</script>
+    window.onload = function() {
+        doStuff();
+    };
+  </script>
 </html>
